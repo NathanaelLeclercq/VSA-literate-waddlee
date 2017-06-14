@@ -47,21 +47,44 @@ wordlist = load_words()
 
 # your code begins here!
 
-wordList = load_words()
+alpha = []
 lissst = []
 wordList = lissst
-blue = lissst
-
+boop2 = []
 def hangman():
     worldd = choose_word(wordlist)
     for letter in worldd:
         lissst.append(letter)
+
     print lissst
-    user_input = str(raw_input("Guess a letter in the word: " ))
-    if user_input in lissst:
-        print "Correct"
-    else:
-        print "InCorrect"
+    lissst2 = []
+
+
+    lissst2 = ('_ ' * len(lissst))
+
+
+    print lissst2,
+    number_guesses = 8
+    while number_guesses > 0:
+        print lissst2
+        print "your guesses:", boop2
+        if number_guesses > 0:
+            user_input = str(raw_input("Guess a letter in the word: "))
+            for boop in user_input:
+                boop2.append(boop)
+            if user_input in lissst:
+
+                print "Correct"
+            else:
+                number_guesses -= 1
+                print "InCorrect", number_guesses, "Guesses left"
+        if  boop2== lissst:
+            print "YOU WIN!"
+            break
+
+        if number_guesses == 0:
+            print "GAME OVER!!!"
+            break
 
 
 
@@ -69,33 +92,9 @@ def hangman():
 
 
 
-
-
-
-
-
-            # while lissst:
-    #     if blue[0] == lissst[0]:
-    #         blue = lissst[1:-1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                # while lissst:
+        #     if blue[0] == lissst[0]:
+        #         blue = lissst[1:-1]
 
 
 hangman()
