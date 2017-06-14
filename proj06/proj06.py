@@ -46,3 +46,56 @@ def choose_word(wordlist):
 wordlist = load_words()
 
 # your code begins here!
+
+wordList = load_words()
+lissst = []
+wordList = lissst
+blue = lissst
+
+def hangman():
+    worldd = choose_word(wordlist)
+    for letter in worldd:
+        lissst.append(letter)
+    print lissst
+    user_input = str(raw_input("Guess a letter in the word: " ))
+    if user_input in lissst:
+        print "Correct"
+    else:
+        print "InCorrect"
+
+
+
+
+
+
+
+
+
+
+
+
+            # while lissst:
+    #     if blue[0] == lissst[0]:
+    #         blue = lissst[1:-1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hangman()

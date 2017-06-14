@@ -13,13 +13,13 @@ mystring = raw_input("enter the word to see if it is a palindrome or not: ")
 
 wordlist = [mystring]
 
-print wordlist
+#print wordlist
 
 stringlist = []
 for letter in mystring:
     stringlist.append(letter)
 
-print stringlist
+#print stringlist
 
 stringlist_reverse = []
 
@@ -30,7 +30,7 @@ while lst:
 
 print stringlist_reverse
 
-if stringlist_reverse == stringlist:
-    print "This is a Palindrome"
-else:
-    print  "This is not a Palindrome"
+# if stringlist_reverse == stringlist:
+#     print "This is a Palindrome"
+# else:
+#     print  "This is not a Palindrome"
